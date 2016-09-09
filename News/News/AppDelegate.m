@@ -7,8 +7,9 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "BeforeLoginViewController.h"
 #import "XHLaunchAd.h"
+#import "YMTabBarController.h"
 
 
 
@@ -20,7 +21,7 @@
  *  动态广告
  */
 #define ImgUrlString2 @"http://c.hiphotos.baidu.com/image/pic/item/d62a6059252dd42a6a943c180b3b5bb5c8eab8e7.jpg"
-@interface AppDelegate ()
+@interface AppDelegate ()<UITabBarControllerDelegate>
 
 @end
 
@@ -67,14 +68,26 @@
         }];
         
     } showFinish:^{
-        
         //广告展示完成回调,设置window根控制器
-        self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
-        
+
+        if (![[NSUserDefaults standardUserDefaults] boolForKey:YMFirstLaunch]) {
+            self.window.rootViewController = [[UIStoryboard storyboardWithName:@"Login&Register" bundle:nil] instantiateViewControllerWithIdentifier:@"BeforeLogin"];
+            [[NSUserDefaults standardUserDefaults] setBool:true forKey:YMFirstLaunch];
+        } else {
+            YMTabBarController *tabbarController = [[YMTabBarController alloc] init];
+            tabbarController.delegate = self;
+            self.window.rootViewController = tabbarController;
+        }
     }];
 
 }
 
+/**
+ *  UITabBarControllerDelegate
+ */
+-(void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
+//    [[NSNotificationCenter defaultCenter] postNotificationName:YMTabBarDidSelectedNotification object:nil userInfo:nil];
+}
 /**
  *  模拟:向服务器请求广告数据
  *

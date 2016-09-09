@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  YMMineViewController.h
 //  News
 //
 //  Created by chenjinbao on 16/9/9.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface YMMineViewController : UIViewController
 
 @end
-
