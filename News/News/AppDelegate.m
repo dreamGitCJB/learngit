@@ -10,7 +10,7 @@
 #import "ViewController.h"
 #import "XHLaunchAd.h"
 
-#define SCREEN [[UIScreen mainScreen] bounds]
+
 
 /**
  *  静态广告
@@ -41,7 +41,7 @@
  *  启动页广告
  */
 - (void)example {
-    [XHLaunchAd showWithAdFrame:CGRectMake(0, 0,SCREEN.size.width,SCREEN.size.height * 80 / 100) setAdImage:^(XHLaunchAd *launchAd) {
+    [XHLaunchAd showWithAdFrame:CGRectMake(0, 0,SCREENSIZE.width, SCREENSIZE.height * 80 / 100) setAdImage:^(XHLaunchAd *launchAd) {
         
         //未检测到广告数据,启动页停留时间,不设置默认为3,(设置4即表示:启动页显示了4s,还未检测到广告数据,就自动进入window根控制器)
         //launchAd.noDataDuration = 4;
