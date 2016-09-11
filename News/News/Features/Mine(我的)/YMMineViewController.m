@@ -7,49 +7,55 @@
 //
 
 #import "YMMineViewController.h"
+#import "CircleView.h"
 
 @interface YMMineViewController ()<UITableViewDelegate>
 #define NavigationBarHight 0.f
 
-#define ImageHight 200.0f
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+#define ImageHight 180.0f
 @property (strong, nonatomic) UIImageView *zoomImageView;//变焦图片做底层
-
-@property (strong, nonatomic) UIImageView *circleView;//类似头像的UIImageView
+@property (strong, nonatomic) CircleView *circleView;
 @property (strong, nonatomic) UILabel *textLabel;//类似昵称UILabel
 @end
 
 @implementation YMMineViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    self.automaticallyAdjustsScrollViewInsets = NO;
-    _tableView.contentInset = UIEdgeInsetsMake(ImageHight-24, 0, 0, 0);
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES];
+}
 
-    _zoomImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"wallpaper_profile.jpg"]];
-    _zoomImageView.frame = CGRectMake(0, -ImageHight - 24, self.view.frame.size.width, ImageHight);
+- (void)createHeadView {
+    _zoomImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"wallpaper_profile_night.jpg"]];
+    _zoomImageView.frame = CGRectMake(0, -ImageHight, self.view.frame.size.width, ImageHight);
     
     //contentMode = UIViewContentModeScaleAspectFill时，高度改变宽度也跟着改变
     _zoomImageView.contentMode = UIViewContentModeScaleAspectFill;//重点（不设置那将只会被纵向拉伸）
     
-    [_tableView addSubview:_zoomImageView];
+    [self.tableView addSubview:_zoomImageView];
     
     //设置autoresizesSubviews让子类自动布局
     _zoomImageView.autoresizesSubviews = YES;
     
-    _circleView = [[UIImageView alloc]initWithFrame:CGRectMake(10, ImageHight-50, 40, 40)];
-    _circleView.backgroundColor = [UIColor redColor];
-    _circleView.layer.cornerRadius = 7.5f;
-    _circleView.image = [UIImage imageNamed:@"wallpaper_profile"];
-    _circleView.clipsToBounds = YES;
-    _circleView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;//自动布局，自适应顶部
+    _circleView = [[CircleView alloc] initWithFrame:CGRectMake(SCREENSIZE.width / 2 - 40 , ImageHight / 2 -40, 80, 80)];
     [_zoomImageView addSubview:_circleView];
-    
-    _textLabel = [[UILabel alloc]initWithFrame:CGRectMake(60, ImageHight-40, 280, 20)];
+    _textLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, ImageHight-40, SCREENSIZE.width, 20)];
     _textLabel.textColor = [UIColor whiteColor];
-    _textLabel.text = @"namelabel";
+    _textLabel.text = @"登录推荐更精准";
+    _textLabel.font = [UIFont systemFontOfSize:15.f];
+    _textLabel.textAlignment = NSTextAlignmentCenter;
     _textLabel.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;//自动布局，自适应顶部
     [_zoomImageView addSubview:_textLabel];
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    self.tableView.contentInset = UIEdgeInsetsMake(ImageHight, 0, 50, 0);
+    self.tableView.tableFooterView = [UIView new];
+
+    [self createHeadView];
     // Do any additional setup after loading the view.
 }
 
@@ -61,9 +67,19 @@
         frame.origin.y = y;
         frame.size.height =  -y;//contentMode = UIViewContentModeScaleAspectFill时，高度改变宽度也跟着改变
         _zoomImageView.frame = frame;
+        CGFloat circle_y = - (y + ImageHight);
+        _circleView.center = CGPointMake(SCREENSIZE.width / 2, (ImageHight + circle_y) / 2);
     }
     
 }
+
+
+//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+//    if (section == 0) {
+//        return 0;
+//    }
+//    return 20;
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

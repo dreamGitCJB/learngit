@@ -8,16 +8,66 @@
         <!--New Care View Controller-->
         <scene sceneID="jP2-lq-LZi">
             <objects>
-                <viewController storyboardIdentifier="YMNewCareView" id="DrF-kp-Q7R" customClass="YMNewCareViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="YMNewCareView" automaticallyAdjustsScrollViewInsets="NO" id="DrF-kp-Q7R" customClass="YMNewCareViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="APo-VV-aKK"/>
                         <viewControllerLayoutGuide type="bottom" id="niU-5f-e0s"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Nb6-6C-qkL">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="890-wC-XNc">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a10-9r-eaB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的关注" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJ1-HQ-G1s">
+                                        <rect key="frame" x="126" y="33" width="68" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x37-rJ-hsM">
+                                        <rect key="frame" x="0.0" y="63" width="320" height="1"/>
+                                        <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="MEU-V6-rEb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="iJ1-HQ-G1s" firstAttribute="centerX" secondItem="a10-9r-eaB" secondAttribute="centerX" id="1ec-ET-GVo"/>
+                                    <constraint firstAttribute="bottom" secondItem="x37-rJ-hsM" secondAttribute="bottom" id="9mk-V2-Rdp"/>
+                                    <constraint firstItem="iJ1-HQ-G1s" firstAttribute="centerY" secondItem="a10-9r-eaB" secondAttribute="centerY" constant="12" id="IAT-WC-pRV"/>
+                                    <constraint firstAttribute="trailing" secondItem="x37-rJ-hsM" secondAttribute="trailing" id="fap-bE-Bju"/>
+                                    <constraint firstItem="x37-rJ-hsM" firstAttribute="leading" secondItem="a10-9r-eaB" secondAttribute="leading" id="uID-KU-uOX"/>
+                                    <constraint firstAttribute="height" constant="64" id="vyG-Ny-bKS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="890-wC-XNc" firstAttribute="top" secondItem="a10-9r-eaB" secondAttribute="bottom" id="2Qg-Bn-tgU"/>
+                            <constraint firstAttribute="trailing" secondItem="890-wC-XNc" secondAttribute="trailing" id="Rvu-ZU-syi"/>
+                            <constraint firstItem="a10-9r-eaB" firstAttribute="leading" secondItem="Nb6-6C-qkL" secondAttribute="leading" id="cgB-RN-URG"/>
+                            <constraint firstItem="niU-5f-e0s" firstAttribute="top" secondItem="890-wC-XNc" secondAttribute="bottom" id="eMU-eh-hw6"/>
+                            <constraint firstAttribute="trailing" secondItem="a10-9r-eaB" secondAttribute="trailing" id="kyu-48-mMm"/>
+                            <constraint firstItem="a10-9r-eaB" firstAttribute="top" secondItem="Nb6-6C-qkL" secondAttribute="top" id="szW-JX-PCW"/>
+                            <constraint firstItem="890-wC-XNc" firstAttribute="leading" secondItem="Nb6-6C-qkL" secondAttribute="leading" id="vnx-XG-7d1"/>
+                        </constraints>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="webView" destination="890-wC-XNc" id="4s1-na-fFd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bs8-Au-yNY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -14,12 +14,18 @@
 
 @implementation YMNavigationController
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     UINavigationBar *navBar = [UINavigationBar appearance];
     navBar.barTintColor = [UIColor whiteColor];
     navBar.tintColor = YMColor(0, 0, 0, 0.7);
     navBar.titleTextAttributes = @{NSFontAttributeName : [UIFont systemFontOfSize:17.f]};
+    self.tabBarController.selectedIndex = 2;
+    self.tabBarController.selectedIndex = 1;
     // Do any additional setup after loading the view.
 }
 
@@ -28,9 +34,10 @@
         [self setNavigationBarHidden:NO];
         viewController.hidesBottomBarWhenPushed = true;
         viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"leftbackicon_sdk_login_16x16_"] style:UIBarButtonItemStylePlain target:self action:@selector(navigationBack)];
-    } else {
-        [self setNavigationBarHidden:YES];
     }
+//    else {
+//        [self setNavigationBarHidden:YES];
+//    }
 
     [super pushViewController:viewController animated:true];
 }

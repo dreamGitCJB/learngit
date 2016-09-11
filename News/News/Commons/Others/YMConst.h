@@ -39,8 +39,8 @@ typedef NS_ENUM(NSInteger,YMOtherLoginButtonType) {
  *  替换成自己的，再进行测试
  */
 
-#define IID 5034850950
-#define device_id 6096495334
+#define IID 5461547359
+#define device_id 6337089857
 /**
  *  第一次启动
  */
@@ -48,7 +48,7 @@ typedef NS_ENUM(NSInteger,YMOtherLoginButtonType) {
 /**
  *  是否登录
  */
-#define isLogin  "isLogin"
+#define isLogin  @"isLogin"
 /**
  *  code 码 200 操作成功
  */

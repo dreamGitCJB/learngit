@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		32313F7499DF6EA19E3D8E14 /* libPods-News.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1F739FA54CD14254CF3ED6F /* libPods-News.a */; };
+		181349FB1D857AC300164859 /* HomeTopTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 181349FA1D857AC300164859 /* HomeTopTitle.m */; };
+		186B9F3B1D85978A00937060 /* AddButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186B9F3A1D85978A00937060 /* AddButtonView.m */; };
+		18FD82CA1D82F20E00FD2330 /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD82C91D82F20E00FD2330 /* CircleView.m */; };
+		74B44D56E70E7783A094741F /* libPods-News.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6F192F7D38A3917DFFC16F /* libPods-News.a */; };
 		7EF318731D82449400CB23D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF318721D82449400CB23D9 /* main.m */; };
 		7EF318761D82449400CB23D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF318751D82449400CB23D9 /* AppDelegate.m */; };
 		7EF3187E1D82449400CB23D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EF3187D1D82449400CB23D9 /* Assets.xcassets */; };
@@ -20,7 +23,7 @@
 		7EF318E71D827AD000CB23D9 /* XHWebImageDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF318DF1D827AD000CB23D9 /* XHWebImageDownload.m */; };
 		7EF318EB1D827BE400CB23D9 /* BeforeLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF318EA1D827BE400CB23D9 /* BeforeLoginViewController.m */; };
 		7EF318F21D82870A00CB23D9 /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF318F11D82870A00CB23D9 /* RequestManager.m */; };
-		7EF318F51D828A6700CB23D9 /* RBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF318F41D828A6700CB23D9 /* RBRequest.m */; };
+		7EF318F51D828A6700CB23D9 /* RBRequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF318F41D828A6700CB23D9 /* RBRequestTool.m */; };
 		7EF318F71D828D3700CB23D9 /* Login&Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EF318F61D828D3700CB23D9 /* Login&Register.storyboard */; };
 		7EF318FE1D82906800CB23D9 /* YMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF318FD1D82906800CB23D9 /* YMHomeViewController.m */; };
 		7EF319011D82909100CB23D9 /* YMVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF319001D82909100CB23D9 /* YMVideoViewController.m */; };
@@ -35,7 +38,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		046FE0E16D1BFCDBB392E681 /* Pods-News.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-News.debug.xcconfig"; path = "Pods/Target Support Files/Pods-News/Pods-News.debug.xcconfig"; sourceTree = "<group>"; };
+		181349F91D857AC300164859 /* HomeTopTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTopTitle.h; sourceTree = "<group>"; };
+		181349FA1D857AC300164859 /* HomeTopTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTopTitle.m; sourceTree = "<group>"; };
+		181349FE1D857C3000164859 /* YMConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMConst.h; sourceTree = "<group>"; };
+		186B9F391D85978A00937060 /* AddButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddButtonView.h; sourceTree = "<group>"; };
+		186B9F3A1D85978A00937060 /* AddButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddButtonView.m; sourceTree = "<group>"; };
+		18FD82C81D82F20E00FD2330 /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
+		18FD82C91D82F20E00FD2330 /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
+		265927345EEBE6EAF3184307 /* Pods-News.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-News.release.xcconfig"; path = "Pods/Target Support Files/Pods-News/Pods-News.release.xcconfig"; sourceTree = "<group>"; };
+		5ADAA3FFFA8025403D1F2260 /* Pods-News.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-News.debug.xcconfig"; path = "Pods/Target Support Files/Pods-News/Pods-News.debug.xcconfig"; sourceTree = "<group>"; };
 		7EF3186E1D82449400CB23D9 /* News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EF318721D82449400CB23D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7EF318741D82449400CB23D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,11 +69,10 @@
 		7EF318E91D827BE400CB23D9 /* BeforeLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeforeLoginViewController.h; sourceTree = "<group>"; };
 		7EF318EA1D827BE400CB23D9 /* BeforeLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeforeLoginViewController.m; sourceTree = "<group>"; };
 		7EF318ED1D827F9A00CB23D9 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		7EF318EE1D8284C600CB23D9 /* YMConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMConst.h; sourceTree = "<group>"; };
 		7EF318F01D82870A00CB23D9 /* RequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestManager.h; sourceTree = "<group>"; };
 		7EF318F11D82870A00CB23D9 /* RequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestManager.m; sourceTree = "<group>"; };
-		7EF318F31D828A6700CB23D9 /* RBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBRequest.h; sourceTree = "<group>"; };
-		7EF318F41D828A6700CB23D9 /* RBRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBRequest.m; sourceTree = "<group>"; };
+		7EF318F31D828A6700CB23D9 /* RBRequestTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBRequestTool.h; sourceTree = "<group>"; };
+		7EF318F41D828A6700CB23D9 /* RBRequestTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBRequestTool.m; sourceTree = "<group>"; };
 		7EF318F61D828D3700CB23D9 /* Login&Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Login&Register.storyboard"; sourceTree = "<group>"; };
 		7EF318FC1D82906800CB23D9 /* YMHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMHomeViewController.h; sourceTree = "<group>"; };
 		7EF318FD1D82906800CB23D9 /* YMHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMHomeViewController.m; sourceTree = "<group>"; };
@@ -80,8 +90,7 @@
 		7EF319131D829B3C00CB23D9 /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
 		7EF319151D829B5E00CB23D9 /* NewsCare.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewsCare.storyboard; sourceTree = "<group>"; };
 		7EF319171D829B6C00CB23D9 /* Video.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Video.storyboard; sourceTree = "<group>"; };
-		C1F739FA54CD14254CF3ED6F /* libPods-News.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-News.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C92DC2B2BB0906CF1C6A41FB /* Pods-News.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-News.release.xcconfig"; path = "Pods/Target Support Files/Pods-News/Pods-News.release.xcconfig"; sourceTree = "<group>"; };
+		8F6F192F7D38A3917DFFC16F /* libPods-News.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-News.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,18 +98,100 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32313F7499DF6EA19E3D8E14 /* libPods-News.a in Frameworks */,
+				74B44D56E70E7783A094741F /* libPods-News.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7D6E0D9EF67AF0E800E07293 /* Pods */ = {
+		181349F31D857A6F00164859 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				046FE0E16D1BFCDBB392E681 /* Pods-News.debug.xcconfig */,
-				C92DC2B2BB0906CF1C6A41FB /* Pods-News.release.xcconfig */,
+				181349F41D857A6F00164859 /* HomeModel */,
+				181349F51D857A6F00164859 /* Login&RegisterModel */,
+				181349F61D857A6F00164859 /* MineModel */,
+				181349F71D857A6F00164859 /* NewsCareModel */,
+				181349F81D857A6F00164859 /* VideoModel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		181349F41D857A6F00164859 /* HomeModel */ = {
+			isa = PBXGroup;
+			children = (
+				181349F91D857AC300164859 /* HomeTopTitle.h */,
+				181349FA1D857AC300164859 /* HomeTopTitle.m */,
+			);
+			path = HomeModel;
+			sourceTree = "<group>";
+		};
+		181349F51D857A6F00164859 /* Login&RegisterModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Login&RegisterModel";
+			sourceTree = "<group>";
+		};
+		181349F61D857A6F00164859 /* MineModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MineModel;
+			sourceTree = "<group>";
+		};
+		181349F71D857A6F00164859 /* NewsCareModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NewsCareModel;
+			sourceTree = "<group>";
+		};
+		181349F81D857A6F00164859 /* VideoModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VideoModel;
+			sourceTree = "<group>";
+		};
+		181349FC1D857C3000164859 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		181349FD1D857C3000164859 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				181349FE1D857C3000164859 /* YMConst.h */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		186B9F381D8596E800937060 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				186B9F391D85978A00937060 /* AddButtonView.h */,
+				186B9F3A1D85978A00937060 /* AddButtonView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18FD82C71D82EC0A00FD2330 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18FD82C81D82F20E00FD2330 /* CircleView.h */,
+				18FD82C91D82F20E00FD2330 /* CircleView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		397F53F4333827598022E60E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5ADAA3FFFA8025403D1F2260 /* Pods-News.debug.xcconfig */,
+				265927345EEBE6EAF3184307 /* Pods-News.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -110,8 +201,8 @@
 			children = (
 				7EF318701D82449400CB23D9 /* News */,
 				7EF3186F1D82449400CB23D9 /* Products */,
-				7D6E0D9EF67AF0E800E07293 /* Pods */,
-				99441525F55B1DE639561A59 /* Frameworks */,
+				397F53F4333827598022E60E /* Pods */,
+				842EE0785AF8EC6443C7E65E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,9 +217,9 @@
 		7EF318701D82449400CB23D9 /* News */ = {
 			isa = PBXGroup;
 			children = (
-				7EF318D11D827AD000CB23D9 /* Commons */,
 				7EF318D21D827AD000CB23D9 /* Features */,
-				7EF318E01D827AD000CB23D9 /* Models */,
+				7EF318D11D827AD000CB23D9 /* Commons */,
+				181349F31D857A6F00164859 /* Models */,
 				7EF318E11D827AD000CB23D9 /* Requests */,
 				7EF318741D82449400CB23D9 /* AppDelegate.h */,
 				7EF318751D82449400CB23D9 /* AppDelegate.m */,
@@ -152,10 +243,9 @@
 		7EF318D11D827AD000CB23D9 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
-				7EF319081D82924200CB23D9 /* Category */,
+				181349FC1D857C3000164859 /* Category */,
 				7EF319091D82924200CB23D9 /* Controller */,
-				7EF3190A1D82924200CB23D9 /* Other */,
-				7EF318EE1D8284C600CB23D9 /* YMConst.h */,
+				181349FD1D857C3000164859 /* Others */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -192,13 +282,6 @@
 			path = XHLaunchAd;
 			sourceTree = "<group>";
 		};
-		7EF318E01D827AD000CB23D9 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		7EF318E11D827AD000CB23D9 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,8 +303,8 @@
 		7EF318EF1D82865600CB23D9 /* RBRequests */ = {
 			isa = PBXGroup;
 			children = (
-				7EF318F31D828A6700CB23D9 /* RBRequest.h */,
-				7EF318F41D828A6700CB23D9 /* RBRequest.m */,
+				7EF318F31D828A6700CB23D9 /* RBRequestTool.h */,
+				7EF318F41D828A6700CB23D9 /* RBRequestTool.m */,
 				7EF318F01D82870A00CB23D9 /* RequestManager.h */,
 				7EF318F11D82870A00CB23D9 /* RequestManager.m */,
 			);
@@ -231,6 +314,7 @@
 		7EF318F81D82904200CB23D9 /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
+				186B9F381D8596E800937060 /* Views */,
 				7EF318FC1D82906800CB23D9 /* YMHomeViewController.h */,
 				7EF318FD1D82906800CB23D9 /* YMHomeViewController.m */,
 				7EF319111D829AB600CB23D9 /* Home.storyboard */,
@@ -241,6 +325,7 @@
 		7EF318F91D82904200CB23D9 /* Mine(我的) */ = {
 			isa = PBXGroup;
 			children = (
+				18FD82C71D82EC0A00FD2330 /* Views */,
 				7EF319051D8290B800CB23D9 /* YMMineViewController.h */,
 				7EF319061D8290B800CB23D9 /* YMMineViewController.m */,
 				7EF319131D829B3C00CB23D9 /* Mine.storyboard */,
@@ -268,13 +353,6 @@
 			path = "Video(视屏)";
 			sourceTree = "<group>";
 		};
-		7EF319081D82924200CB23D9 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
 		7EF319091D82924200CB23D9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,17 +364,10 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		7EF3190A1D82924200CB23D9 /* Other */ = {
+		842EE0785AF8EC6443C7E65E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = Other;
-			sourceTree = "<group>";
-		};
-		99441525F55B1DE639561A59 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C1F739FA54CD14254CF3ED6F /* libPods-News.a */,
+				8F6F192F7D38A3917DFFC16F /* libPods-News.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -308,12 +379,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7EF318851D82449400CB23D9 /* Build configuration list for PBXNativeTarget "News" */;
 			buildPhases = (
-				C2F626C7843B5172F9068A4D /* Check Pods Manifest.lock */,
+				90C645DC85F0300E5E92420C /* [CP] Check Pods Manifest.lock */,
 				7EF3186A1D82449400CB23D9 /* Sources */,
 				7EF3186B1D82449400CB23D9 /* Frameworks */,
 				7EF3186C1D82449400CB23D9 /* Resources */,
-				83FC749DA82EB5CB6D48C3BD /* Embed Pods Frameworks */,
-				6D13A0FC6B31966E50480180 /* Copy Pods Resources */,
+				90221D386A73B5CAB261EFB9 /* [CP] Embed Pods Frameworks */,
+				6D7B13474736068B1C4DCE69 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -335,6 +406,7 @@
 				TargetAttributes = {
 					7EF3186D1D82449400CB23D9 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = V4YAFQAVW3;
 					};
 				};
 			};
@@ -374,14 +446,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6D13A0FC6B31966E50480180 /* Copy Pods Resources */ = {
+		6D7B13474736068B1C4DCE69 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,14 +461,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-News/Pods-News-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		83FC749DA82EB5CB6D48C3BD /* Embed Pods Frameworks */ = {
+		90221D386A73B5CAB261EFB9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,14 +476,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-News/Pods-News-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C2F626C7843B5172F9068A4D /* Check Pods Manifest.lock */ = {
+		90C645DC85F0300E5E92420C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,8 +498,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EF318F51D828A6700CB23D9 /* RBRequest.m in Sources */,
+				7EF318F51D828A6700CB23D9 /* RBRequestTool.m in Sources */,
 				7EF318EB1D827BE400CB23D9 /* BeforeLoginViewController.m in Sources */,
+				18FD82CA1D82F20E00FD2330 /* CircleView.m in Sources */,
 				7EF318E71D827AD000CB23D9 /* XHWebImageDownload.m in Sources */,
 				7EF319101D82980000CB23D9 /* YMNavigationController.m in Sources */,
 				7EF318E51D827AD000CB23D9 /* XHImageCache.m in Sources */,
@@ -435,9 +508,11 @@
 				7EF3190D1D82927100CB23D9 /* YMTabBarController.m in Sources */,
 				7EF318761D82449400CB23D9 /* AppDelegate.m in Sources */,
 				7EF318731D82449400CB23D9 /* main.m in Sources */,
+				186B9F3B1D85978A00937060 /* AddButtonView.m in Sources */,
 				7EF318F21D82870A00CB23D9 /* RequestManager.m in Sources */,
 				7EF318E31D827AD000CB23D9 /* UIImage+XHGIF.m in Sources */,
 				7EF318E41D827AD000CB23D9 /* UIImageView+XHWebCache.m in Sources */,
+				181349FB1D857AC300164859 /* HomeTopTitle.m in Sources */,
 				7EF319041D8290A800CB23D9 /* YMNewCareViewController.m in Sources */,
 				7EF318E21D827AD000CB23D9 /* UIButton+XHEnlarged.m in Sources */,
 				7EF319071D8290B800CB23D9 /* YMMineViewController.m in Sources */,
@@ -546,31 +621,37 @@
 		};
 		7EF318861D82449400CB23D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 046FE0E16D1BFCDBB392E681 /* Pods-News.debug.xcconfig */;
+			baseConfigurationReference = 5ADAA3FFFA8025403D1F2260 /* Pods-News.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ye Chen (2CUGYTJ66Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/News/PrefixHeader.pch";
 				INFOPLIST_FILE = News/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.homyu.News;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "09f0f568-d43e-47d7-a476-c29ede20633b";
 			};
 			name = Debug;
 		};
 		7EF318871D82449400CB23D9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C92DC2B2BB0906CF1C6A41FB /* Pods-News.release.xcconfig */;
+			baseConfigurationReference = 265927345EEBE6EAF3184307 /* Pods-News.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ye Chen (2CUGYTJ66Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/News/PrefixHeader.pch";
 				INFOPLIST_FILE = News/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.homyu.News;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "09f0f568-d43e-47d7-a476-c29ede20633b";
 			};
 			name = Release;
 		};
